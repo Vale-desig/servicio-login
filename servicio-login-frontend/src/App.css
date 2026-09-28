@@ -1,0 +1,373 @@
+/* Colores principales:
+   Fondo: #F4F5F7
+   Azul grisáceo: #5B7083
+   Texto: #2F3437
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F4F5F7;
+  color: #2F3437;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.inicio {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.tarjeta-inicio {
+  width: 100%;
+  max-width: 500px;
+  background-color: #FFFFFF;
+  padding: 45px 35px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-inicio h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #5B7083;
+  font-size: 30px;
+}
+
+.tarjeta-inicio p {
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.botones-inicio {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.botones-inicio button {
+  flex: 1;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5B7083;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.botones-inicio button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 500px) {
+  .tarjeta-inicio {
+    padding: 35px 20px;
+  }
+
+  .tarjeta-inicio h1 {
+    font-size: 25px;
+  }
+
+  .botones-inicio {
+    flex-direction: column;
+  }
+}
+
+/* Pantalla de formularios */
+
+.pagina-formulario {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.tarjeta-formulario {
+  width: 100%;
+  max-width: 500px;
+  background-color: #FFFFFF;
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-formulario h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #5B7083;
+}
+
+.tarjeta-formulario p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tarjeta-formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-formulario label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.tarjeta-formulario input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #D5D9DC;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.tarjeta-formulario input:focus {
+  outline: none;
+  border-color: #5B7083;
+}
+
+.tarjeta-formulario  form button {
+  padding: 13px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5B7083;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boton-secundario {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px solid #5B7083;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #5B7083;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tarjeta-formulario button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 500px) {
+  .tarjeta-formulario {
+    padding: 30px 20px;
+  }
+}
+
+.reglas-contrasena {
+  margin-top: -8px;
+  margin-bottom: 18px;
+  padding-left: 22px;
+  font-size: 13px;
+  text-align: left;
+}
+
+.reglas-contrasena li {
+  margin-bottom: 5px;
+}
+
+.reglas-contrasena li::marker {
+  color: #2F3437;
+}
+
+.reglas-contrasena li.cumplida {
+  color: green;
+}
+
+.reglas-contrasena li.cumplida::marker {
+  color: green;
+}
+
+.mensaje-formulario {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Menú lateral */
+
+.boton-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5B7083;
+  color: #FFFFFF;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.boton-menu:hover {
+  opacity: 0.9;
+}
+
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: #FFFFFF;
+  padding: 25px;
+  box-shadow: 5px 0 20px rgba(0, 0, 0, 0.12);
+  z-index: 1100;
+}
+
+.menu-lateral h2 {
+  margin-top: 55px;
+  margin-bottom: 30px;
+  color: #5B7083;
+  text-align: center;
+}
+
+.boton-cerrar-menu {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 8px;
+  background-color: #F4F5F7;
+  color: #2F3437;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu-lateral > button:not(.boton-cerrar-menu) {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5B7083;
+  color: #FFFFFF;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.menu-lateral > button:hover {
+  opacity: 0.9;
+}
+
+/* Ventanas de confirmación */
+
+.ventana-confirmacion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(47, 52, 55, 0.35);
+  z-index: 1200;
+}
+
+.tarjeta-confirmacion {
+  width: 100%;
+  max-width: 420px;
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.tarjeta-confirmacion h2 {
+  margin-top: 0;
+  color: #5B7083;
+}
+
+.tarjeta-confirmacion p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.tarjeta-confirmacion input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+  border: 1px solid #D5D9DC;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.tarjeta-confirmacion input:focus {
+  outline: none;
+  border-color: #5B7083;
+}
+
+.tarjeta-confirmacion button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5B7083;
+  color: #FFFFFF;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.tarjeta-confirmacion button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 500px) {
+  .menu-lateral {
+    width: 85%;
+    max-width: 280px;
+  }
+
+  .boton-menu {
+    top: 15px;
+    left: 15px;
+  }
+
+  .tarjeta-confirmacion {
+    padding: 25px 20px;
+  }
+}
+
+.enlace-recuperacion {
+  display: block;
+  width: fit-content;
+  margin: -5px 0 15px auto;
+  color: #5B7083;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.enlace-recuperacion:hover {
+  color: #2F3437;
+  text-decoration: underline;
+}
