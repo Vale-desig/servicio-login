@@ -61,7 +61,7 @@ public class RestablecerPasswordRequest {
         return nuevaContrasena;
     }
     
-    public void setNuevacontrasena(String nuevaContrasena){
+    public void setNuevaContrasena(String nuevaContrasena){
         this.nuevaContrasena = nuevaContrasena;
     }
     

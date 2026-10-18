@@ -47,7 +47,7 @@ public class LoginRequest {
         return apellido;
     }
     
-    public void serApellido(String apellido){
+    public void setApellido(String apellido){
         this.apellido = apellido;
     }
     

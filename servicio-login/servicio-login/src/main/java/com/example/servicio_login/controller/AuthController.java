@@ -176,11 +176,11 @@ public class AuthController {
         if (resultado.equals(
                 "No existe un código de recuperación activo.")
                 || resultado.equals(
-                "El código dee recuperación es incorrecto.")
+                "El código de recuperación es incorrecto.")
                 || resultado.equals(
                 "El código de recuperación ha expirado.")
                 || resultado.equals(
-                "Las contraseñas no coinciden.")){
+                "Las contraseñas no coinciden")){
             
             return ResponseEntity
                     .badRequest()
